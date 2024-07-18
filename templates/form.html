@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kundendaten Formular</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kundendaten Formular</h1>
+      <form action="/submit" method="post">
+        <div>
+          <label for="vollmachtgeber_name">Name Vorname (Vollmachtgeber/in):</label>
+          <input type="text" id="vollmachtgeber_name" name="vollmachtgeber_name" required>
+        </div>
+        <div>
+          <label for="vollmachtgeber_geburtsdatum">Geburtsdatum:</label>
+          <input type="date" id="vollmachtgeber_geburtsdatum" name="vollmachtgeber_geburtsdatum" required>
+        </div>
+        <div>
+          <label for="vollmachtgeber_geburtsort">Geburtsort:</label>
+          <input type="text" id="vollmachtgeber_geburtsort" name="vollmachtgeber_geburtsort" required>
+        </div>
+        <div>
+          <label for="vollmachtgeber_adresse">Adresse:</label>
+          <input type="text" id="vollmachtgeber_adresse" name="vollmachtgeber_adresse" required>
+        </div>
+        <div>
+          <label for="vollmachtgeber_telefon">Telefon:</label>
+          <input type="text" id="vollmachtgeber_telefon" name="vollmachtgeber_telefon" required>
+        </div>
+        <div>
+          <label for="vollmachtgeber_email">Email:</label>
+          <input type="email" id="vollmachtgeber_email" name="vollmachtgeber_email" required>
+        </div>
+        <div>
+          <label for="bevollmaechtigter_name">Name Vorname (Bevollmächtigter/in):</label>
+          <input type="text" id="bevollmaechtigter_name" name="bevollmaechtigter_name" required>
+        </div>
+        <div>
+          <label for="bevollmaechtigter_geburtsdatum">Geburtsdatum:</label>
+          <input type="date" id="bevollmaechtigter_geburtsdatum" name="bevollmaechtigter_geburtsdatum" required>
+        </div>
+        <div>
+          <label for="bevollmaechtigter_geburtsort">Geburtsort:</label>
+          <input type="text" id="bevollmaechtigter_geburtsort" name="bevollmaechtigter_geburtsort" required>
+        </div>
+        <div>
+          <label for="bevollmaechtigter_adresse">Adresse:</label>
+          <input type="text" id="bevollmaechtigter_adresse" name="bevollmaechtigter_adresse" required>
+        </div>
+        <div>
+          <label for="bevollmaechtigter_telefon">Telefon:</label>
+          <input type="text" id="bevollmaechtigter_telefon" name="bevollmaechtigter_telefon" required>
+        </div>
+        <div>
+          <label for="bevollmaechtigter_email">Email:</label>
+          <input type="email" id="bevollmaechtigter_email" name="bevollmaechtigter_email" required>
+        </div>
+        <div>
+          <label for="ort">Ort:</label>
+          <input type="text" id="ort" name="ort" required>
+        </div>
+        <div>
+          <label for="datum">Datum:</label>
+          <input type="date" id="datum" name="datum" required>
+        </div>
+          <button type="submit" name="action" value="save">Speichern</button>
+
+      </form>
+    </div>
+  </body>
+</html>
